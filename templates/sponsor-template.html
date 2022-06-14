@@ -1,0 +1,640 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+    <title>Two Column Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="robots" content="index,follow,noarchive">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="School of Global Policy & Strategy">
+    <meta name="PAGETITLE" content="School of Global Policy & Strategy">
+    <meta name="DESCRIPTION" content="A community dedicated to the advancement of knowledge through teaching, research and engagement.">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.min.css">
+    <link rel="stylesheet" href="../css/blink.css">
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="styles/ie-support.css"/>
+    <![endif]-->
+
+    <!-- Begin site-specific CSS files -->
+
+    <!-- End site-specific CSS files -->
+
+    <script src="../scripts/modernizr.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="vendor/respond/dest/respond.min.js"></script>
+    <link href="https://cdn.ucsd.edu/cms/decorator-4/scripts/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+    <link href="img/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+    <script src="scripts/ucsd/respond-proxy.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<header class="layout-header">
+	<a class="sr-only" href="#main-content">Skip to main content</a>
+	<div id="uc-emergency"></div>
+	<section class="layout-login">
+		<div class="layout-container"></div>
+	</section>
+
+    <section class="layout-title">
+        <div class="layout-container container">
+            <a href="index.html" class="title-header title-header-large">Decorator V5</a>
+            <a href="index.html" class="title-header title-header-short">V5</a>
+            <a href="https://www.ucsd.edu" class="title-logo">UC San Diego</a>
+        </div>
+    </section>
+</header>
+
+<!-- mobile offcanvas nav -->
+<div class="navmenu navmenu-default navmenu-fixed-left offcanvas" style="">
+
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <div class="search">
+              <button class="search-toggle btn-default">
+                  <span class="glyphicon glyphicon-search"></span> <span class="caret"></span>
+              </button>
+
+              <div class="search-content" id="search">
+                  <form action="https://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
+                      <select class="search-scope" name="search-scope">
+                          <option value="default_collection">All UCSD Sites</option>
+                          <option value="faculty-staff">Faculty/Staff</option>
+                      </select>
+
+                      <div class="input-group">
+                          <input placeholder="Search..." type="search" class="form-control search-term"
+                          id="q" name="search-term">
+                      </div>
+                  </form>
+              </div>
+          </div>
+        </li>
+    </ul>
+
+
+	<ul class="nav navmenu-nav">
+		<li class="active"><a href="../index.html">Home</a></li>
+		<li class="dropdown open">
+		  	<a href="index.html" class="dropdown-toggle">Templates <b class="caret"></b></a>
+		  	<ul class="dropdown-menu navmenu-nav">
+          <li><a href="homepage.html">Homepage</a></li>
+          <li><a href="blank-slate.html">Blank Slate</a></li>
+          <li><a href="two-column.html">Two Column</a></li>
+          <li><a href="three-column.html">Three Column</a></li>
+		  	</ul>
+		</li>
+		<li><a href="../kitchen-sink/index.html">Kitchen Sink</a></li>
+		<li class="dropdown open">
+			<a href="../templates/index.html" class="dropdown-toggle">Widgets <b class="caret"></b></a>
+			<ul class="dropdown-menu navmenu-nav">
+        <li><a href="../templates/fullcalendar.html">FullCalendar</a></li>
+        <li><a href="../templates/datatables.html">DataTable</a></li>
+        <li><a href="../templates/wizard.html">Wizard</a></li>
+        <li><a href="../templates/maxchar.html">MaxChar</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<!-- end mobile offcanvas nav -->
+
+<!-- navbar -->
+<nav class="navbar navbar-default" data-module="nav">
+	<div class="container-fluid header-wrap">
+		<div class="container">
+			<div class="navbar-header">
+				<a aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar-collapse-grid" data-toggle="collapse" href="#">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<!-- mobile search dropdown -->
+				<a class="search-icon search-expand dropdown-toggle visible-xs visible-sm" data-toggle="dropdown" href="#">
+					<span class="search-icon"></span>
+				</a>
+				<div class="dropdown-menu dropdown-search">
+					<form action="/search/index.html" aria-label="Mobile Search Box" class="navbar-form navbar-right navbar-search form-inline mobile-search-form" role="search">
+						<div class="input-group nav-search-mobile">
+							<input aria-label="Mobile Search Box" class="form-control input-search" data-id="inputSearchMobile" id="q" name="search-term" placeholder="Search in UC San Diego" type="search" />
+							<input name="site" type="hidden" value="cascade-cwp" />
+							<span class="input-group-btn">
+								<button class="btn btn-primary search-icon search-expand mobile-search-icon" type="button">
+									<img alt="search-icon" src="https://www.ucsd.edu/_resources/img/icon_search.png" />
+								</button>
+							</span>
+						</div>
+						<label class="radio-inline" for="searchUCSDMobile">
+							<input aria-label="Search UC San Diego on Mobile Device" checked="checked" id="searchUCSDMobile" name="t" onclick="setSearch('web')" role="radiogroup" type="radio" value="web" /> Search UC San Diego
+						</label>
+						<label class="radio-inline" for="searchFacultyMobile">
+							<input aria-label="Search Faculty and Staff on Mobile Device" id="searchFacultyMobile" name="t" onclick="setSearch('directory')" role="radiogroup" type="radio" value="directory" /> Search Faculty/Staff
+						</label>
+						<input class="sr-only" type="submit" value="Submit" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid nav-wrap">
+		<div class="container">
+			<div class="navbar-collapse collapse" id="navbar-collapse-grid">
+				<!-- standard nav small -->
+				<ul class="nav navbar-nav small-nav visible-xs visible-sm">
+					<li class="dropdown">
+						<div class="btn-group navbar-btn">
+							<a href="http://ucsd.edu/about/index.html">About</a>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" />
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="site://UCSD/about/visiting-tours/index">Visiting &amp; Tours</a>
+								</li>
+								<li>
+									<a href="http://ucsd.edu/timeline/index.html">History</a>
+								</li>
+								<li>
+									<a href="http://ucsdnews.ucsd.edu/">News</a>
+								</li>
+								<li>
+									<a href="http://jobs.ucsd.edu/">Jobs @ UC San Diego</a>
+								</li>
+								<li>
+									<a href="http://chancellor.ucsd.edu/">Office of the Chancellor</a>
+								</li>
+								<li>
+									<a href="http://health.ucsd.edu/">UC San Diego Health</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="btn-group navbar-btn">
+							<a href="http://ucsd.edu/academics/">Academics</a>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" />
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="http://students.ucsd.edu">TritonLink</a>
+								</li>
+								<li>
+									<a href="http://ucsd.edu/academics-detail.html">Undergraduate Degrees &amp; Programs</a>
+								</li>
+								<li>
+									<a href="https://apply.grad.ucsd.edu/departments">Graduate Degrees &amp; Programs</a>
+								</li>
+								<li>
+									<a href="http://provost.ucsd.edu/colleges/">Colleges</a>
+								</li>
+								<li>
+									<a href="http://ucsd.edu/academics/academic-success.html">Student Academic Success</a>
+								</li>
+								<li>
+									<a href="http://digitallearning.ucsd.edu/">Digital Learning</a>
+								</li>
+								<li>
+									<a href="http://extension.ucsd.edu/">Extension</a>
+								</li>
+								<li>
+									<a href="http://library.ucsd.edu/">Library</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="btn-group navbar-btn">
+							<a href="http://ucsd.edu/admissions-aid/index.html">Admissions and Aid</a>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" />
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="http://admissions.ucsd.edu/freshman/">Freshman Admissions</a>
+								</li>
+								<li>
+									<a href="http://admissions.ucsd.edu/transfer/">Transfer Admissions</a>
+								</li>
+								<li>
+									<a href="http://grad.ucsd.edu/admissions/">Graduate Admissions</a>
+								</li>
+								<li>
+									<a href="https://meded.ucsd.edu/index.cfm/asa/admissions/">School of Medicine</a>
+								</li>
+								<li>
+									<a href="https://pharmacy.ucsd.edu/prospective/admissions.shtml">Skaggs School of Pharmacy</a>
+								</li>
+								<li>
+									<a href="https://students.ucsd.edu/finances/financial-aid/">Financial Aid</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="btn-group navbar-btn">
+							<a href="http://ucsd.edu/research-innovation/index.html">Research and Innovation</a>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" />
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="http://ucsd.edu/research-innovation/research-initiatives.html">Research Initiatives</a>
+								</li>
+								<li>
+									<a href="http://ucsd.edu/research-innovation/student-opportunities.html">Student Opportunities</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="btn-group navbar-btn">
+							<a href="http://ucsd.edu/campus-life/index.html">Campus Life</a>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" />
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="http://ucsd.edu/campus-life/organizations/index.html">Organizations</a>
+								</li>
+								<li>
+									<a href="http://ucsd.edu/campus-life/diversity/index.html">Diversity</a>
+								</li>
+								<li>
+									<a href="http://calendar.ucsd.edu/">Events</a>
+								</li>
+								<li>
+									<a href="http://ucsd.edu/campus-life/student-support.html">Student Support</a>
+								</li>
+								<li>
+									<a href="http://studyabroad.ucsd.edu/">Study Abroad</a>
+								</li>
+								<li>
+									<a href="http://career.ucsd.edu/">Career &amp; Internship</a>
+								</li>
+								<li>
+									<a href="http://athletics.ucsd.edu">Athletics</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="btn-group navbar-btn">
+							<a href="http://ucsd.edu/support/index.html">Support UC San Diego</a>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" />
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="http://alumni.ucsd.edu/">Alumni</a>
+								</li>
+								<li>
+									<a href="http://giving.ucsd.edu/">Giving</a>
+								</li>
+								<li>
+									<a href="http://foundation.ucsd.edu/">Foundation</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<!-- large nav -->
+				<div class="main-nav">
+					<ul class="nav navbar-nav menu large-nav hidden-xs hidden-sm">
+						<li class="nav-group nav-group-sm">
+							<a href="http://ucsd.edu/about/index.html">About</a>
+							<ul class="list-unstyled">
+								<li>
+									<a href="site://UCSD/about/visiting-tours/index">Visiting &amp; Tours</a>
+								</li>
+								<li>
+									<a href="http://ucsd.edu/timeline/index.html">History</a>
+								</li>
+								<li>
+									<a href="http://ucsdnews.ucsd.edu/">News</a>
+								</li>
+								<li>
+									<a href="http://jobs.ucsd.edu/">Jobs @ UC San Diego</a>
+								</li>
+								<li>
+									<a href="http://chancellor.ucsd.edu/">Office of the Chancellor</a>
+								</li>
+								<li>
+									<a href="http://health.ucsd.edu/">UC San Diego Health</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-group nav-group-sm">
+							<a href="http://ucsd.edu/academics/">Academics</a>
+							<ul class="list-unstyled">
+								<li>
+									<a href="http://students.ucsd.edu">TritonLink</a>
+								</li>
+								<li>
+									<a href="http://ucsd.edu/academics-detail.html">Undergraduate Degrees &amp; Programs</a>
+								</li>
+								<li>
+									<a href="https://apply.grad.ucsd.edu/departments">Graduate Degrees &amp; Programs</a>
+								</li>
+								<li>
+									<a href="http://provost.ucsd.edu/colleges/">Colleges</a>
+								</li>
+								<li>
+									<a href="http://ucsd.edu/academics/academic-success.html">Student Academic Success</a>
+								</li>
+								<li>
+									<a href="http://digitallearning.ucsd.edu/">Digital Learning</a>
+								</li>
+								<li>
+									<a href="http://extension.ucsd.edu/">Extension</a>
+								</li>
+								<li>
+									<a href="http://library.ucsd.edu/">Library</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-group">
+							<a href="http://ucsd.edu/admissions-aid/index.html">Admissions
+								<br /> and Aid
+							</a>
+							<ul class="list-unstyled">
+								<li>
+									<a href="http://admissions.ucsd.edu/freshman/">Freshman Admissions</a>
+								</li>
+								<li>
+									<a href="http://admissions.ucsd.edu/transfer/">Transfer Admissions</a>
+								</li>
+								<li>
+									<a href="http://grad.ucsd.edu/admissions/">Graduate Admissions</a>
+								</li>
+								<li>
+									<a href="https://meded.ucsd.edu/index.cfm/asa/admissions/">School of Medicine</a>
+								</li>
+								<li>
+									<a href="https://pharmacy.ucsd.edu/prospective/admissions.shtml">Skaggs School of Pharmacy</a>
+								</li>
+								<li>
+									<a href="https://students.ucsd.edu/finances/financial-aid/">Financial Aid</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-group nav-group-lg">
+							<a href="http://ucsd.edu/research-innovation/index.html">Research and
+								<br /> Innovation
+							</a>
+							<ul class="list-unstyled">
+								<li>
+									<a href="http://ucsd.edu/research-innovation/research-initiatives.html">Research Initiatives</a>
+								</li>
+								<li>
+									<a href="http://ucsd.edu/research-innovation/student-opportunities.html">Student Opportunities</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-group nav-group-sm">
+							<a href="http://ucsd.edu/campus-life/index.html">Campus Life</a>
+							<ul class="list-unstyled">
+								<li>
+									<a href="http://ucsd.edu/campus-life/organizations/index.html">Organizations</a>
+								</li>
+								<li>
+									<a href="http://ucsd.edu/campus-life/diversity/index.html">Diversity</a>
+								</li>
+								<li>
+									<a href="http://calendar.ucsd.edu/">Events</a>
+								</li>
+								<li>
+									<a href="http://ucsd.edu/campus-life/student-support.html">Student Support</a>
+								</li>
+								<li>
+									<a href="http://studyabroad.ucsd.edu/">Study Abroad</a>
+								</li>
+								<li>
+									<a href="http://career.ucsd.edu/">Career &amp; Internship</a>
+								</li>
+								<li>
+									<a href="http://athletics.ucsd.edu">Athletics</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-group">
+							<a href="http://ucsd.edu/support/index.html">Support
+								<br /> UC San Diego
+							</a>
+							<ul class="list-unstyled">
+								<li>
+									<a href="http://alumni.ucsd.edu/">Alumni</a>
+								</li>
+								<li>
+									<a href="http://giving.ucsd.edu/">Giving</a>
+								</li>
+								<li>
+									<a href="http://foundation.ucsd.edu/">Foundation</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<!-- end navbar -->
+
+<main class="layout-main" id="main-content" role="main">
+
+  <div class="container">
+    <div class="row">
+      <ol class="breadcrumb breadcrumbs-list">
+          <div id="faculty-staff-badge"><a href="index.html"><span class="fs-badge-f">Faculty</span> &amp; <span class="fs-badge-s">Staff</span></a></div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="templates.html">Templates</a></li>
+          <li class="active">Two Columns</li>
+      </ol>
+    </div>
+  </div>
+
+
+
+
+	<div class="container">
+		<div class="row">
+      <section aria-label="Main Content" id="sponsor-template" class="col-xs-12 col-md-9 main-section pull-right">
+                <h1>Compensation</h1>
+
+
+
+
+                <div class="article_info">
+                <div class="article_updated_at">Last Updated: June 29, 2020 8:36:46 PM PDT</div>
+                <div class="article_feedback">Give <a href="https://eforms.ucsd.edu/view.php?id=252329/" onclick="window.open('https://eforms.ucsd.edu/view.php?id=252329/','DYGWYW','menubar=0,resizable=1,scrollbars=1,width=450,height=640')" target="DYGWYW">feedback</a></div>
+                </div>
+
+
+
+                <div class="col-md-12">
+
+
+                  <div class="drawer-wrapper">
+                      <div class="drawer">
+
+                        <h2>Drawer 1</h2>
+                        <div>Drawer Body</div>
+
+                        <h2>Drawer 2</h2>
+                        <div>Drawer Body 2</div>
+
+                      </div>
+                    </div>
+
+                <h2>What we do</h2>
+
+                <div class=""><p>Compensation is the division of Human Resources responsible for policies and programs related to pay, job classification, and employee records for staff employees.</p>
+                <p>We manage compensation and classification programs, including:</p>
+                <ul>
+                <li>Administration of base pay and ancillary pay</li>
+                <li>Range adjustment, merit increase, and award programs</li>
+                <li>Classification and pay grade determination</li>
+                <li>Development of classification tools and compensation methodology</li>
+                <li>Compensation-related training and communication programs</li>
+                <li>Coordination of campus-wide classification advisory committees</li>
+                <li>Auditing of personnel actions entered into the payroll/ personnel system</li>
+                </ul>
+                <p>For additional information about services and resources, see&nbsp;<a href="http://blink.ucsd.edu/HR/comp-class/index.html">Compensation &amp; Classification</a></p></div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                <h2>Vice Chancellor area assignments</h2>
+
+                <div class=""><ul>
+                <li>Mario Chavez<br>
+                <ul>
+                <li>Marine Sciences</li>
+                <li>Resource Management &amp; Planning</li>
+                </ul>
+                </li>
+                <li>Melody Chiles
+                <ul>
+                <li>Academic Affairs</li>
+                <li>Equity, Diversity &amp; Inclusion</li>
+                </ul>
+                </li>
+                <li>Mila Goff
+                <ul>
+                <li>Academic Senate</li>
+                <li>Advancement</li>
+                <li>CFO</li>
+                </ul>
+                </li>
+                <li>Lynn Bui Lee
+                <ul>
+                <li>Research Affairs</li>
+                <li>Student Affairs<span id="wysiwg_editor_254666b8ac1a010c57b164fefdb840d2_path">&nbsp;</span></li>
+                </ul>
+                </li>
+                <li>Pearl White Reyes<br>
+                <ul>
+                <li>Chancellor's Office</li>
+                </ul>
+                </li>
+                </ul>
+                <p><strong>Note</strong>: For Health Sciences and Medical Center questions, please contact Doug Levine at <a href="mailto:a6levine@ucsd.edu">a6levine@ucsd.edu</a></p></div>
+
+                </div>
+
+
+
+                <div class="col-md-6">
+
+                <h2>About us</h2>
+                <div class=""><h3>Compensation</h3>
+                <p>E-mail:&nbsp;<a href="mailto:compensation@ucsd.edu">compensation@ucsd.edu</a><br> Phone: x40986</p>
+                <h3>Records</h3>
+                <p>E-mail:&nbsp;<a href="mailto:records@ucsd.edu">records@ucsd.edu</a></p>
+                <h3>Mailing address</h3>
+                <p>9500 Gilman Drive<br> La Jolla, CA 92093-0922</p>
+                <h3>Street address</h3>
+                <p>10280 N. Torrey Pines Road<br> Suite 265A<br> La Jolla, CA 92037</p>
+                <h3>Contacts</h3>
+                <p>Paula Soder Finnegan<br>Interim Director of Calssification, Compensation and Records<br> (858) 822-2583<br> <a href="mailto:psoder@ucsd.edu">psoder@ucsd.edu</a></p>
+                <p><span>Kenric Yu</span><br><span>Principal Compensation/Classification Operations Manager</span><br><span>(858) 534-4215</span><br><a href="mailto:kmyu@ucsd.edu">kmyu@ucsd.edu</a></p>
+                <p><span>Liz Dueñas Girgis</span><br><span>Records&nbsp;Supervisor &amp; Salary Plan Coordinator</span><br><span>(858) 534-3847</span><br><a href="mailto:eduenas@ucsd.edu">eduenas@ucsd.edu</a></p>
+                <p>Mario Chavez<br> Principal Compensation Analyst<br> (858) 534-2709<br><a href="mailto:mac113@ucsd.edu">mac113@ucsd.edu</a></p>
+                <p>Melody Chiles<br> Principal Compensation Analyst<br> (858) 822-2650<br> <a href="mailto:mcchiles@ucsd.edu">mcchiles@ucsd.edu</a></p>
+                <p>Maria Nerissa Clarete (Maissa)<br>Senior Compensation Analyst<br> (858) 534-2046<br><a href="mailto:mclarete@ucsd.edu">mclarete@ucsd.edu</a></p>
+                <p>Mila Goff<br> Principal Compensation Analyst<br> (858) 534-2825<br> <a href="mailto:jgoff@ucsd.edu">jgoff@ucsd.edu</a></p>
+                <p>Missie Jacobs<br> Senior&nbsp;Compensation Analyst<br> (858) 822-2627<br> <a href="mailto:gjacobs@ucsd.edu">gjacobs@ucsd.edu</a></p>
+                <p>Lynn Bui Lee<br> Principal Compensation Analyst<br> (858) 534-0282<br> <a href="mailto:lbui@ucsd.edu">lbui@ucsd.edu</a></p>
+                <p>Karin McGregor<br> Records Specialist<br> (858)&nbsp;534-7447<br> <a href="mailto:ksmcgregor@ucsd.edu">ksmcgregor@ucsd.edu</a></p>
+                <p>Mellisa Moses<br style="background-color: transparent; color: #333333; cursor: text; font-family: ' helvetica neue',helvetica,arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; outline-color: transparent; outline-style: none; outline-width: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px;">Records Specialist<br style="background-color: transparent; color: #333333; cursor: text; font-family: ' helvetica neue',helvetica,arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; outline-color: transparent; outline-style: none; outline-width: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px;"><span style="display: inline !important; float: none; background-color: transparent; color: #333333; cursor: text; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"> (858) 534-0281</span><br style="background-color: transparent; color: #333333; cursor: text; font-family: ' helvetica neue',helvetica,arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; outline-color: transparent; outline-style: none; outline-width: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px;"><a href="mailto:mmoses@ucsd.edu">mmoses@ucsd.edu</a><a href="mailto:pwhite@ucsd.edu" style="background-color: transparent; color: #016691; font-family: ' helvetica neue',helvetica,arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; transition-delay: 0s; transition-duration: 0.3s; transition-property: color; transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1); -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"></a></p>
+                <p>Pearl White Reyes<br> Principal Compensation Analyst<br> (858) 534-0279<br> <a href="mailto:pwhite@ucsd.edu">pwhite@ucsd.edu</a></p>
+                <p>Angie Rodriguez<br> Records Specialist<br> (858) 534-9248<br> <a href="mailto:a8rodriguez@ucsd.edu">a8rodriguez@ucsd.edu</a></p>
+                <p>Feifei Yu<br style="background-color: transparent; color: #333333; cursor: text; font-family: ' helvetica neue',helvetica,arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; outline-color: transparent; outline-style: none; outline-width: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px;">Records Specialist<br style="background-color: transparent; color: #333333; cursor: text; font-family: ' helvetica neue',helvetica,arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; outline-color: transparent; outline-style: none; outline-width: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px;"><span style="display: inline !important; float: none; background-color: transparent; color: #333333; cursor: text; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"> (858) 246-5960</span><br style="background-color: transparent; color: #333333; cursor: text; font-family: ' helvetica neue',helvetica,arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; outline-color: transparent; outline-style: none; outline-width: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px;"><a href="mailto:f6yu@ucsd.edu"><span style="display: inline !important; float: none; background-color: transparent; color: #333333; cursor: text; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"> </span>f6yu@ucsd.edu</a><a href="mailto:pwhite@ucsd.edu" style="background-color: transparent; color: #016691; font-family: ' helvetica neue',helvetica,arial,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; transition-delay: 0s; transition-duration: 0.3s; transition-property: color; transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1); -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"></a></p></div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="additional-text"><content></content></div>
+
+
+
+
+
+                </section>
+    </div>
+    </div>
+</main>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+	            <p>
+		            <span>UC San Diego 9500 Gilman Dr. La Jolla, CA 92093 (858) 534-2230</span>
+					<br />
+		            <span>
+		                Copyright © <span class="footer-copyright-year"></span> Regents of the University of California.
+		                All rights reserved.
+		            </span>
+		        </p>
+	            <ul class="footer-links">
+		            <li><a href="https://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
+		            <li><a href="mailto:youremail@xyz.ucsd.edu">Feedback</a></li>
+		        </ul>
+	        </div>
+	        <div class="col-sm-4">
+            <img src="http://cdn.ucsd.edu/developer/decorator/5.0.2/img/ucsd-footer-logo-white.png" alt="" class="img-responsive footer-logo" />
+		    </div>
+		</div>
+	</div>
+</footer>
+
+<script src="../scripts/jquery.min.js"></script>
+
+<script src="../scripts/bootstrap.min.js"></script>
+
+<script src="https://www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
+
+
+<script src="../scripts/vendor.min.js"></script>
+<script src="../scripts/base.min.js"></script>
+
+</body>
+</html>

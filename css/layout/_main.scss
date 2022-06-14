@@ -1,0 +1,20 @@
+/* Main Section Adjustments */
+
+.main-section {
+  a {
+    text-decoration: underline;
+  }
+
+  a.text-link {
+    text-decoration: none;
+  }
+}
+
+.main-section > h1:first-child {
+    margin-top: 0;padding: 0;line-height: 1;
+}
+
+.subhead {
+    font-size: 130%;
+    margin-bottom: 25px;
+}
