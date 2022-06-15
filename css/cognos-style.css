@@ -1,0 +1,88 @@
+.body-text {
+    margin-bottom: 15px;
+}
+
+.report-top-content {
+    clear: both;
+    margin: 40px 0 15px 0;
+}
+
+
+
+.bottom-content {
+    clear: both;
+    margin-bottom: 15px;
+}
+
+
+.report-detail {
+    border: 1px solid #D2D2D2;
+    padding: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.r-more-detais {
+    display: none;
+    overflow: hidden;
+    margin: 10px 0;
+    clear: both;
+    padding: 10px 0 10px 0;
+}
+
+
+.accordion_body {
+    padding: 10px !important;
+}
+
+.button-wrap {
+    overflow: hidden;
+}
+
+.report-preview p {
+    margin-top: 10px;
+}
+
+.preview-cap {
+   font-style: italic;
+}
+
+a.show_hide.expand-d {
+    border: 1px solid #034f80;
+    padding: 10px;
+    border-radius: 4px;
+    /* color: #FFF; */
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    margin: 10px 0;
+    width: 136px;
+}
+
+a.reportLink {
+    background-color: #0275d8;
+    padding: 10px;
+    border-radius: 4px;
+    color: #FFF;
+    /* clear: both; */
+    text-decoration: none;
+    float: right;
+    margin: 10px 0 10px 20px;
+}
+
+.criteria, .fields {
+    width: 45%;
+    float: left;
+    margin: 30px 0 0 0;
+
+}
+
+.criteria {
+    margin-right: 10%;
+}
+
+.rc, .rf {
+    -moz-column-count:2;
+    -webkit-column-count:2;
+    column-count:2;
+}

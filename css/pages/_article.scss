@@ -1,0 +1,23 @@
+.figure_left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    max-width: 100%;
+
+    @media only screen and (max-width: 500px) {
+      width: 100% !important;
+    }
+
+}
+
+.figure_right {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    max-width: 100%;
+
+    @media only screen and (max-width: 500px) {
+      width: 100% !important;
+    }
+
+}
