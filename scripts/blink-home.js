@@ -228,7 +228,7 @@ $(".news-col-1 >.news-item").each(function (j) {
   console.log(countEventItems);
   
   //subtract number of items with total allowed on the list
-  var eventCutOffno = countEventItems - 3;
+  var eventCutOffno = countEventItems - 6;
   
   console.log(eventCutOffno);
 

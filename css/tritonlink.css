@@ -2296,7 +2296,7 @@ nav#toolbar-nav {
 
 /* Jumbotron Search */
 .blink-jumbosearch {
-  background: url(../images/homepage/bear-darker.jpg) no-repeat;
+  background: url(../images/homepage/brand-elements-hero.jpg) no-repeat;
   height: auto;
   margin: 0;
   text-align: left;
@@ -2463,9 +2463,6 @@ nav#toolbar-nav {
   padding: 0.5em 1em;
   margin: 0 1.5em 0.25em 0;
 }
-.jumbotron-news-events .date-wrap span {
-  font-family: BrixSansBold;
-}
 .jumbotron-news-events .event {
   margin-bottom: 1.5em;
   display: flex;
@@ -2497,9 +2494,18 @@ nav#toolbar-nav {
 
 @media (min-width: 768px) {
   .jumbotron-news-events .events {
-    display: flex;
+    /*
+        display: flex;
     flex-flow: row;
     justify-content: space-between;
+        */
+    display: block;
+    /*max-height: 489px;*/
+    overflow: hidden;
+    padding: 0;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
   }
   .jumbotron-news-events .event {
     margin: 1em 0 1.5em 0;
@@ -2760,6 +2766,124 @@ nav#toolbar-nav {
   margin-right: 5px;
 }
 
+/* TL Announcements */
+#news-announcements {
+  clear: both;
+  display: block;
+  margin-top: 50px;
+}
+#news-announcements h3 {
+  color: #005d99;
+  font-weight: 400;
+}
+
+.cs_announcement_content {
+  line-height: 1.5em;
+}
+
+/* TL Slider */
+.slick-slide img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+.slick-prev {
+  left: 15px !important;
+  z-index: 9999 !important;
+}
+
+.slick-next {
+  right: 15px !important;
+}
+
+.slick-prev-icon, .slick-next-icon {
+  color: #fff !important;
+}
+
+button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
+  background-color: transparent !important;
+}
+
+/* TL Tools */
+#toolbox {
+  color: #FFF;
+  display: block;
+  height: 300px;
+  margin-top: 40px;
+  max-width: 25%;
+}
+
+/* toolbox buttons */
+.sbutton {
+  background-color: #00629B !important;
+  display: block;
+  height: 40px;
+  overflow: hidden;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.sbutton h3 {
+  margin-left: 55px;
+  line-height: 2em;
+  color: #FFF;
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.sbutton a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.t-tools {
+  background: #182b49 url(../images/wrench.png) no-repeat;
+  background-position: -1px 2px;
+}
+
+.s-forms {
+  background: #182b49 url(../images/paper.png) no-repeat;
+  background-position: -1px 1px;
+}
+
+.s-calendar {
+  background: #182b49 url(../images/calendar.png) no-repeat;
+  background-position: -1px 3px;
+}
+
+.s-email {
+  background: #182b49 url(../images/letter.png) no-repeat;
+  background-position: -1px 4px;
+}
+
+.s-ted {
+  background: #182b49 url(../images/books.png) no-repeat;
+  background-position: -1px 4px;
+}
+
+.s-ptriton {
+  background: #182b49 url(../images/compass.png) no-repeat;
+  background-position: -1px 4px;
+}
+
+.s-ptriton {
+  background: #182b49 url(../images/compass.png) no-repeat;
+  background-position: -1px 4px;
+}
+
+.s-handshake {
+  background: #182b49 url(../images/handshake.png) no-repeat;
+  background-position: -1px 5px;
+}
+
+.sbutton:hover {
+  background-color: #ebae23 !important;
+}
+.sbutton:hover a {
+  color: #000 !important;
+}
+
 .figure_left {
   float: left;
   margin-right: 15px;
@@ -2809,4 +2933,4 @@ nav#toolbar-nav {
   width: 91%;
 }
 
-/*# sourceMappingURL=blink.css.map */
+/*# sourceMappingURL=tritonlink.css.map */
