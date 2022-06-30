@@ -141,7 +141,7 @@
       }
       h2 {
         font-size: 1.5em;
-        margin: 0;
+        margin: 9px 0 0 0;
       }
       h3 {
         font-size: 1.2em;
@@ -156,6 +156,11 @@
 			  color: #182b49;
 		  }
 	  }
+
+    .no-mg-top {
+      margin: 0px !important;
+    }
+    
 	  .news-events-title a {
 		  text-decoration: underline;
 	  }
@@ -553,7 +558,7 @@
 #news-announcements {
   clear: both;
   display: block;
-  margin-top: 50px;
+  margin-top: 30px;
 
     h3 {
       color: #005d99;

@@ -2425,7 +2425,7 @@ nav#toolbar-nav {
 }
 .jumbotron-news-events h2 {
   font-size: 1.5em;
-  margin: 0;
+  margin: 9px 0 0 0;
 }
 .jumbotron-news-events h3 {
   font-size: 1.2em;
@@ -2439,6 +2439,9 @@ nav#toolbar-nav {
 }
 .jumbotron-news-events a:hover {
   color: #182b49;
+}
+.jumbotron-news-events .no-mg-top {
+  margin: 0px !important;
 }
 .jumbotron-news-events .news-events-title a {
   text-decoration: underline;
@@ -2770,7 +2773,7 @@ nav#toolbar-nav {
 #news-announcements {
   clear: both;
   display: block;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 #news-announcements h3 {
   color: #005d99;
