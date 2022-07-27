@@ -2435,7 +2435,7 @@ nav#toolbar-nav {
   line-height: 1.3;
 }
 .jumbotron-news-events a {
-  color: #00629b;
+  color: #333333;
 }
 .jumbotron-news-events a:hover {
   color: #182b49;
@@ -2465,6 +2465,9 @@ nav#toolbar-nav {
   line-height: 1.25em;
   padding: 0.5em 1em;
   margin: 0 1.5em 0.25em 0;
+}
+.jumbotron-news-events .fm-blue {
+  background: #182B49 !important;
 }
 .jumbotron-news-events .event {
   margin-bottom: 1.5em;
@@ -2771,13 +2774,19 @@ nav#toolbar-nav {
 
 /* TL Announcements */
 #news-announcements {
+  background: #eee;
   clear: both;
   display: block;
   margin-top: 30px;
+  padding: 10px;
+  height: 338px;
 }
 #news-announcements h3 {
   color: #005d99;
   font-weight: 400;
+}
+#news-announcements .fm-h3 {
+  color: #182B49;
 }
 
 .cs_announcement_content {
@@ -2785,6 +2794,61 @@ nav#toolbar-nav {
 }
 
 /* TL Slider */
+.jumbotron-hero {
+  background: transparent !important;
+}
+
+.carousel-inner {
+  outline: transparent !important;
+}
+
+.cr-item-container {
+  background: #2e2e2e8f;
+  bottom: 0;
+  left: 0;
+  padding: 0 0 0 10px;
+  top: unset !important;
+  width: 100% !important;
+}
+.cr-item-container h1 {
+  margin: 15px 0;
+  font-size: 13px;
+}
+
+#indicators-container {
+  position: relative;
+  bottom: 0;
+  padding: 10px 0;
+  margin-left: 0;
+  height: 45px;
+}
+
+.carousel-control {
+  outline: transparent !important;
+}
+
+.carousel-indicators li {
+  border-color: #00629B;
+  height: 15px;
+  width: 15px;
+}
+
+.carousel-indicators .active {
+  background-color: #00629B;
+  height: 16px;
+  width: 16px;
+}
+#toggleCarousel {
+  position: relative;
+  float: left !important;
+  font-size: 18px !important;
+  bottom: 3px !important;
+}
+
+button#toggleCarousel {
+  color: #00629B !important;
+}
+
 #heroslider h1 {
   font-size: 20px;
 }
@@ -2821,7 +2885,7 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
   display: block;
   height: 300px;
   margin-top: 40px;
-  max-width: 25%;
+  max-width: 100%;
 }
 
 /* toolbox buttons */
@@ -2832,6 +2896,14 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
   overflow: hidden;
   width: 300px;
   margin-bottom: 10px;
+}
+
+.ed-tool {
+  background-color: #747678 !important;
+}
+
+.fm-tool {
+  background-color: #B6B1A9 !important;
 }
 
 .sbutton h3 {
@@ -2849,28 +2921,63 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
 }
 
 .t-tools {
-  background: #747678 url(../images/wrench.png) no-repeat;
+  /*background: #747678 url(../images/wrench.png) no-repeat;*/
   background-position: -1px 2px;
+}
+.t-tools object {
+  width: 35px;
+  display: block;
+  position: absolute;
+  left: 25px;
+  top: 77px;
 }
 
 .s-forms {
-  background: #747678 url(../images/paper.png) no-repeat;
-  background-position: -1px 1px;
+  /*background: #747678 url(../images/paper.png) no-repeat;
+  background-position: -1px 1px;*/
+}
+.s-forms object {
+  width: 30px;
+  display: block;
+  position: absolute;
+  left: 25px;
+  top: 130px;
 }
 
 .s-calendar {
-  background: #747678 url(../images/calendar.png) no-repeat;
-  background-position: -1px 3px;
+  /*background: #747678 url(../images/calendar.png) no-repeat;
+  background-position: -1px 3px;*/
+}
+.s-calendar object {
+  width: 30px;
+  display: block;
+  position: absolute;
+  left: 25px;
+  top: 180px;
 }
 
 .s-email {
-  background: #747678 url(../images/letter.png) no-repeat;
-  background-position: -1px 4px;
+  /*background: #747678 url(../images/letter.png) no-repeat;
+  background-position: -1px 4px;*/
+}
+.s-email object {
+  width: 30px;
+  display: block;
+  position: absolute;
+  left: 25px;
+  top: 230px;
 }
 
 .s-ted {
-  background: #747678 url(../images/books.png) no-repeat;
-  background-position: -1px 4px;
+  /*background: #747678 url(../images/books.png) no-repeat;
+  background-position: -1px 4px;*/
+}
+.s-ted object {
+  width: 30px;
+  display: block;
+  position: absolute;
+  left: 28px;
+  top: 280px;
 }
 
 .s-ptriton {
@@ -2884,8 +2991,15 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
 }
 
 .s-handshake {
-  background: #747678 url(../images/handshake.png) no-repeat;
-  background-position: -1px 5px;
+  /*background: #747678 url(../images/handshake.png) no-repeat;
+  background-position: -1px 5px;*/
+}
+object {
+  width: 30px;
+  display: block;
+  position: absolute;
+  left: 25px;
+  top: 330px;
 }
 
 .sbutton:hover {

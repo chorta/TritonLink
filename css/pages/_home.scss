@@ -151,7 +151,7 @@
         line-height: 1.3;
       } 
 	  a {
-		  color: #00629b;
+		  color: #333333;
 		  &:hover {
 			  color: #182b49;
 		  }
@@ -187,6 +187,11 @@
 			padding: .5em 1em;
 			margin: 0 1.5em .25em 0;
 		}
+
+    .fm-blue { 
+      background: #182B49 !important;
+    }
+
 		.event {
 			margin-bottom: 1.5em;
 			display: flex;
@@ -556,6 +561,7 @@
 /* TL Announcements */
 
 #news-announcements {
+  background: #eee;
   clear: both;
   display: block;
   margin-top: 30px;
@@ -565,6 +571,14 @@
       font-weight: 400;
     }
 
+    .fm-h3 {
+      color: #182B49;
+    }
+
+  padding: 10px;
+  height: 338px;
+    
+
 }
 
 .cs_announcement_content {
@@ -572,6 +586,69 @@
 }
 
 /* TL Slider */
+
+.jumbotron-hero {
+  background: transparent !important;
+}
+
+.carousel-inner {
+  outline: transparent !important;
+}
+
+.cr-item-container {
+  background: #2e2e2e8f;
+  bottom: 0;
+  left: 0;
+  padding: 0 0 0 10px;
+  top: unset !important;
+  width: 100% !important;
+   h1 {
+    margin: 15px 0;
+    font-size: 13px;
+   }
+}
+
+#indicators-container {
+  position: relative;
+  bottom: 0;
+  padding: 10px 0;
+  margin-left: 0;
+  height: 45px;
+}
+
+.carousel-control {
+  outline: transparent !important;
+}
+
+.carousel-indicators li {
+  border-color: #00629B;
+  height: 15px;
+  width: 15px;
+}
+
+.carousel-indicators .active {
+  background-color: #00629B;
+  height: 16px;
+  width: 16px;
+
+  .i-everyday {
+    
+  }
+
+}
+
+#toggleCarousel {
+  position: relative;
+  float: left !important;
+  font-size: 18px !important;
+  bottom: 3px !important;
+}
+
+button#toggleCarousel {
+  color:#00629B !important;
+}
+
+
 
 #heroslider {
   h1 {
@@ -612,7 +689,7 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
   display: block;
   height: 300px;
   margin-top: 40px;
-  max-width: 25%;
+  max-width: 100%;
 }
 
 /* toolbox buttons */
@@ -624,6 +701,14 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
   overflow: hidden;
   width: 300px;
   margin-bottom: 10px;
+}
+
+.ed-tool {
+  background-color: #747678 !important;
+}
+
+.fm-tool {
+  background-color: #B6B1A9 !important;
 }
 
 .sbutton h3 {
@@ -641,28 +726,73 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
 }
 
 .t-tools {
-  background: #747678 url(../images/wrench.png) no-repeat;
+  /*background: #747678 url(../images/wrench.png) no-repeat;*/
   background-position: -1px 2px;
+
+    object {
+      width: 35px;
+      display: block;
+      position: absolute;
+      left: 25px;
+      top: 77px;
+    }
+
 }
 
 .s-forms {
-  background: #747678 url(../images/paper.png) no-repeat;
-  background-position: -1px 1px;
+  /*background: #747678 url(../images/paper.png) no-repeat;
+  background-position: -1px 1px;*/
+
+  object {
+    width: 30px;
+    display: block;
+    position: absolute;
+    left: 25px;
+    top: 130px;
+  }
+  
 }
 
 .s-calendar {
-  background: #747678 url(../images/calendar.png) no-repeat;
-  background-position: -1px 3px;
+  /*background: #747678 url(../images/calendar.png) no-repeat;
+  background-position: -1px 3px;*/
+
+  object {
+    width: 30px;
+    display: block;
+    position: absolute;
+    left: 25px;
+    top: 180px;
+  }
+
 }
 
 .s-email {
-  background: #747678 url(../images/letter.png) no-repeat;
-  background-position: -1px 4px;
+  /*background: #747678 url(../images/letter.png) no-repeat;
+  background-position: -1px 4px;*/
+
+  object {
+    width: 30px;
+    display: block;
+    position: absolute;
+    left: 25px;
+    top: 230px;
+  }
+
 }
 
 .s-ted {
-  background: #747678 url(../images/books.png) no-repeat;
-  background-position: -1px 4px;
+  /*background: #747678 url(../images/books.png) no-repeat;
+  background-position: -1px 4px;*/
+
+  object {
+    width: 30px;
+    display: block;
+    position: absolute;
+    left: 28px;
+    top: 280px;
+  }
+
 }
 
 .s-ptriton {
@@ -676,8 +806,15 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
 }
 
 .s-handshake {
-  background: #747678 url(../images/handshake.png) no-repeat;
-  background-position: -1px 5px;
+  /*background: #747678 url(../images/handshake.png) no-repeat;
+  background-position: -1px 5px;*/@at-root
+  object {
+    width: 30px;
+    display: block;
+    position: absolute;
+    left: 25px;
+    top: 330px;
+  }
 }
 
 .sbutton:hover {
