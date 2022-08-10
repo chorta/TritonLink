@@ -2434,6 +2434,9 @@ nav#toolbar-nav {
   font-weight: 500;
   line-height: 1.3;
 }
+.jumbotron-news-events a {
+  color: #333333;
+}
 .jumbotron-news-events a:hover {
   color: #182b49;
 }
@@ -2810,13 +2813,12 @@ nav#toolbar-nav {
 .cr-item-container h1 {
   margin: 15px 0 15px 10px;
   font-size: 13px;
-  text-transform: none !important;
 }
 
 #indicators-container {
   position: relative;
   bottom: 0;
-  padding: 10px 0 0 19px;
+  padding: 10px 0;
   margin-left: 0;
   height: 45px;
 }
@@ -2892,7 +2894,7 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
   display: block;
   height: 40px;
   overflow: hidden;
-  width: 100%;
+  width: 300px;
   margin-bottom: 10px;
 }
 
