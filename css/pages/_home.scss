@@ -560,7 +560,7 @@
 /* TL Announcements */
 
 #news-announcements {
-  background: #eee;
+  /*background: #eee;*/
   clear: both;
   display: block;
   margin-top: 30px;
@@ -568,6 +568,7 @@
     h3 {
       color: #005d99;
       font-weight: 400;
+      margin-bottom: 7px;
     }
 
     .fm-h3 {
@@ -576,13 +577,61 @@
 
   padding: 10px;
   height: 338px;
-    
-
 }
 
 .cs_announcement_content {
   line-height: 1.5em;
+  padding: 10px;
 }
+
+
+.slick-list {
+  background-color: #eee;
+}
+
+.slick-dots {
+
+  text-align: left !important;
+
+  li button .slick-dot-icon {
+    color: transparent !important;
+  }
+
+  li button {
+    height: 16px !important;
+    width: 16px !important;
+  }
+
+  li.slick-active button .slick-dot-icon {
+    color: #00629b !important;
+    border: none !important
+  }
+
+  li.slick-active button:focus .slick-dot-icon,  {
+    color: transparent !important;
+  }
+ 
+  li button:focus .slick-dot-icon:before {
+    color: transparent !important;
+  }
+
+  li button {
+    border: 1px solid #00629b !important;
+    border-radius: 13px;
+  }
+
+}
+
+
+
+.slick-dots {
+  .slick-active button {
+
+    border: none !important
+
+  }
+}
+
 
 /* TL Slider */
 
@@ -695,7 +744,7 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
 /* toolbox buttons */
 
 .sbutton {
-  background-color: #00629B !important;
+  /*background-color: #00629B !important;*/
   display: block;
   height: 40px;
   overflow: hidden;
@@ -704,11 +753,11 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
 }
 
 .ed-tool {
-  background-color: #747678 !important;
+  /*background-color: #747678 !important;*/
 }
 
 .fm-tool {
-  background-color: #B6B1A9 !important;
+  /*background-color: #B6B1A9 !important;*/
 }
 
 .sbutton h3 {
@@ -721,8 +770,9 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
 }
 
 .sbutton a {
-  color: #FFF;
+  color: #00629b;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 .t-tools {
