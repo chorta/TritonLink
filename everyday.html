@@ -89,361 +89,164 @@
 
 
 <!-- navbar -->
-<nav class="navbar navbar-default" data-module="nav">
+<!-- navbar --><nav class="navbar navbar-default" data-module="nav">
 	<div class="container-fluid header-wrap">
 		<div class="container">
-			<div class="navbar-header">
-				<a aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar-collapse-grid" data-toggle="collapse" href="#">
-					<span class="sr-only">Toggle Main navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</a>
-				<!-- Toolbar dropdown -->
-				<a aria-expanded="false" class="navbar-toolbar-icon navbar-toggle collapsed" data-target="#navbar-collapse-toolbar" data-toggle="collapse" href="#">
-					<span class="sr-only">Toggle Toolbar navigation</span>
-					<span class="toolbar-icon"></span>
-				</a>			 
-				<!-- mobile search dropdown -->
-				
-						
-				<a aria-expanded="false" id="tools-nav-button" class="navbar-toggle collapsed" data-target="#navbar-collapse-toolbar" data-toggle="collapse" href="#">
-					<span class="sr-only">Toggle Tool Bar Navigation</span>
-					<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
-				</a>			 
-						
-				
-					
-
-				<a class="search-icon search-expand dropdown-toggle visible-xs visible-sm" data-toggle="dropdown" href="#">
-					<span class="search-icon"></span>
-				</a>
-				<div class="dropdown-menu dropdown-search">
-					<form action="https://blink.ucsd.edu/search/index.html" aria-label="Mobile Search Box" class="navbar-search form-inline mobile-search-form" role="search">
-						<div class="input-group nav-search-mobile">
-							<input aria-label="Mobile Search Box" class="form-control input-search is-mobile" data-id="inputSearchMobile" id="q" name="q" placeholder="Search in UC San Diego" type="search" />
-							<span class="input-group-btn">
-								<button class="btn btn-primary search-icon search-expand mobile-search-icon" type="button">
-									<img alt="search-icon" src="https://www.ucsd.edu/_resources/img/icon_search.png" />
-								</button>
-							</span>
-						</div>
-
-						<label class="radio-inline" for="searchFacultyMobile">
-							<input aria-label="Search Faculty and Staff on Mobile Device" id="searchFacultyMobile" name="t" onclick="setSearch('directory')" role="radiogroup" type="radio" value="directory" /> Search Faculty/Staff
-						</label>
-            <label class="radio-inline" for="searchUCSDMobile">
-							<input aria-label="Search UC San Diego on Mobile Device" checked="checked" id="searchUCSDMobile" name="t" onclick="setSearch('web')" role="radiogroup" type="radio" /> Search Blink
-						</label>
-						<input class="sr-only" type="submit" value="Submit" />
-					</form>
-				</div>
-			</div>
+		<div class="navbar-header"><a aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar-collapse-grid" data-toggle="collapse" href="#"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <!-- mobile search dropdown --> <a class="search-icon search-expand dropdown-toggle visible-xs visible-sm" data-toggle="dropdown" href="#"> <span class="search-icon"></span> </a>
+		<div class="dropdown-menu dropdown-search"><form action="/search/index.html" aria-label="Mobile Search Box" class="navbar-search form-inline mobile-search-form" role="search">
+		<div class="input-group nav-search-mobile"><input aria-label="Mobile Search Box" class="form-control input-search is-mobile" data-id="inputSearchMobile" id="q" name="q" placeholder="Search TritonLink" type="search" /> <span class="input-group-btn"> <button class="btn btn-primary search-icon search-expand mobile-search-icon" type="button"> <img alt="search-icon" src="https://www.ucsd.edu/_resources/img/icon_search.png" /> </button> </span></div>
+		<label class="radio-inline" for="searchFacultyMobile"> <input aria-label="Search Faculty and Staff on Mobile Device" id="searchFacultyMobile" name="t" onclick="setSearch('directory')" role="radiogroup" type="radio" value="directory" /> Search Faculty/Staff </label> <label class="radio-inline" for="searchUCSDMobile"> <input aria-label="Search UC San Diego on Mobile Device" checked="checked" id="searchUCSDMobile" name="t" onclick="setSearch('blink')" role="radiogroup" type="radio" /> Search TritonLink </label> <input class="sr-only" type="submit" value="Submit" /></form></div>
 		</div>
-	</div>
-	<div class="container-fluid nav-wrap">
+		</div>
+		</div>
+		<div class="container-fluid nav-wrap">
 		<div class="container">
-			<div class="navbar-collapse collapse" id="navbar-collapse-grid">
-				<!-- standard nav small -->
-				<ul class="nav navbar-nav small-nav visible-xs visible-sm">
-					<li class="dropdown">
-						<div class="btn-group navbar-btn">
-							<a href="http://ucsd.edu/about/index.html">About</a>
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-								<img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" />
-							</a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="site://UCSD/about/visiting-tours/index">Visiting &amp; Tours</a>
-								</li>
-								<li>
-									<a href="http://ucsd.edu/timeline/index.html">History</a>
-								</li>
-								<li>
-									<a href="http://ucsdnews.ucsd.edu/">News</a>
-								</li>
-								<li>
-									<a href="http://jobs.ucsd.edu/">Jobs @ UC San Diego</a>
-								</li>
-								<li>
-									<a href="http://chancellor.ucsd.edu/">Office of the Chancellor</a>
-								</li>
-								<li>
-									<a href="http://health.ucsd.edu/">UC San Diego Health</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="btn-group navbar-btn">
-							<a href="http://ucsd.edu/academics/">Academics</a>
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-								<img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" />
-							</a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="http://students.ucsd.edu">TritonLink</a>
-								</li>
-								<li>
-									<a href="http://ucsd.edu/academics-detail.html">Undergraduate Degrees &amp; Programs</a>
-								</li>
-								<li>
-									<a href="https://apply.grad.ucsd.edu/departments">Graduate Degrees &amp; Programs</a>
-								</li>
-								<li>
-									<a href="http://provost.ucsd.edu/colleges/">Colleges</a>
-								</li>
-								<li>
-									<a href="http://ucsd.edu/academics/academic-success.html">Student Academic Success</a>
-								</li>
-								<li>
-									<a href="http://digitallearning.ucsd.edu/">Digital Learning</a>
-								</li>
-								<li>
-									<a href="http://extension.ucsd.edu/">Extension</a>
-								</li>
-								<li>
-									<a href="http://library.ucsd.edu/">Library</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="btn-group navbar-btn">
-							<a href="http://ucsd.edu/admissions-aid/index.html">Admissions and Aid</a>
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-								<img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" />
-							</a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="http://admissions.ucsd.edu/freshman/">Freshman Admissions</a>
-								</li>
-								<li>
-									<a href="http://admissions.ucsd.edu/transfer/">Transfer Admissions</a>
-								</li>
-								<li>
-									<a href="http://grad.ucsd.edu/admissions/">Graduate Admissions</a>
-								</li>
-								<li>
-									<a href="https://meded.ucsd.edu/index.cfm/asa/admissions/">School of Medicine</a>
-								</li>
-								<li>
-									<a href="https://pharmacy.ucsd.edu/prospective/admissions.shtml">Skaggs School of Pharmacy</a>
-								</li>
-								<li>
-									<a href="https://students.ucsd.edu/finances/financial-aid/">Financial Aid</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="btn-group navbar-btn">
-							<a href="http://ucsd.edu/research-innovation/index.html">Research and Innovation</a>
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-								<img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" />
-							</a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="http://ucsd.edu/research-innovation/research-initiatives.html">Research Initiatives</a>
-								</li>
-								<li>
-									<a href="http://ucsd.edu/research-innovation/student-opportunities.html">Student Opportunities</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="btn-group navbar-btn">
-							<a href="http://ucsd.edu/campus-life/index.html">Campus Life</a>
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-								<img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" />
-							</a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="http://ucsd.edu/campus-life/organizations/index.html">Organizations</a>
-								</li>
-								<li>
-									<a href="http://ucsd.edu/campus-life/diversity/index.html">Diversity</a>
-								</li>
-								<li>
-									<a href="http://calendar.ucsd.edu/">Events</a>
-								</li>
-								<li>
-									<a href="http://ucsd.edu/campus-life/student-support.html">Student Support</a>
-								</li>
-								<li>
-									<a href="http://studyabroad.ucsd.edu/">Study Abroad</a>
-								</li>
-								<li>
-									<a href="http://career.ucsd.edu/">Career &amp; Internship</a>
-								</li>
-								<li>
-									<a href="http://athletics.ucsd.edu">Athletics</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="btn-group navbar-btn">
-							<a href="http://ucsd.edu/support/index.html">Support UC San Diego</a>
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-								<img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" />
-							</a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="http://alumni.ucsd.edu/">Alumni</a>
-								</li>
-								<li>
-									<a href="http://giving.ucsd.edu/">Giving</a>
-								</li>
-								<li>
-									<a href="http://foundation.ucsd.edu/">Foundation</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-				<!-- large nav -->
-				<div class="main-nav">
-					<ul class="nav navbar-nav menu large-nav hidden-xs hidden-sm">
-						<li class="nav-group nav-group-sm">
-							<a href="http://ucsd.edu/about/index.html">About</a>
-							<ul class="list-unstyled">
-								<li>
-									<a href="site://UCSD/about/visiting-tours/index">Visiting &amp; Tours</a>
-								</li>
-								<li>
-									<a href="http://ucsd.edu/timeline/index.html">History</a>
-								</li>
-								<li>
-									<a href="http://ucsdnews.ucsd.edu/">News</a>
-								</li>
-								<li>
-									<a href="http://jobs.ucsd.edu/">Jobs @ UC San Diego</a>
-								</li>
-								<li>
-									<a href="http://chancellor.ucsd.edu/">Office of the Chancellor</a>
-								</li>
-								<li>
-									<a href="http://health.ucsd.edu/">UC San Diego Health</a>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-group nav-group-sm">
-							<a href="http://ucsd.edu/academics/">Academics</a>
-							<ul class="list-unstyled">
-								<li>
-									<a href="http://students.ucsd.edu">TritonLink</a>
-								</li>
-								<li>
-									<a href="http://ucsd.edu/academics-detail.html">Undergraduate Degrees &amp; Programs</a>
-								</li>
-								<li>
-									<a href="https://apply.grad.ucsd.edu/departments">Graduate Degrees &amp; Programs</a>
-								</li>
-								<li>
-									<a href="http://provost.ucsd.edu/colleges/">Colleges</a>
-								</li>
-								<li>
-									<a href="http://ucsd.edu/academics/academic-success.html">Student Academic Success</a>
-								</li>
-								<li>
-									<a href="http://digitallearning.ucsd.edu/">Digital Learning</a>
-								</li>
-								<li>
-									<a href="http://extension.ucsd.edu/">Extension</a>
-								</li>
-								<li>
-									<a href="http://library.ucsd.edu/">Library</a>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-group">
-							<a href="http://ucsd.edu/admissions-aid/index.html">Admissions
-								<br /> and Aid
-							</a>
-							<ul class="list-unstyled">
-								<li>
-									<a href="http://admissions.ucsd.edu/freshman/">Freshman Admissions</a>
-								</li>
-								<li>
-									<a href="http://admissions.ucsd.edu/transfer/">Transfer Admissions</a>
-								</li>
-								<li>
-									<a href="http://grad.ucsd.edu/admissions/">Graduate Admissions</a>
-								</li>
-								<li>
-									<a href="https://meded.ucsd.edu/index.cfm/asa/admissions/">School of Medicine</a>
-								</li>
-								<li>
-									<a href="https://pharmacy.ucsd.edu/prospective/admissions.shtml">Skaggs School of Pharmacy</a>
-								</li>
-								<li>
-									<a href="https://students.ucsd.edu/finances/financial-aid/">Financial Aid</a>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-group nav-group-lg">
-							<a href="http://ucsd.edu/research-innovation/index.html">Research and
-								<br /> Innovation
-							</a>
-							<ul class="list-unstyled">
-								<li>
-									<a href="http://ucsd.edu/research-innovation/research-initiatives.html">Research Initiatives</a>
-								</li>
-								<li>
-									<a href="http://ucsd.edu/research-innovation/student-opportunities.html">Student Opportunities</a>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-group nav-group-sm">
-							<a href="http://ucsd.edu/campus-life/index.html">Campus Life</a>
-							<ul class="list-unstyled">
-								<li>
-									<a href="http://ucsd.edu/campus-life/organizations/index.html">Organizations</a>
-								</li>
-								<li>
-									<a href="http://ucsd.edu/campus-life/diversity/index.html">Diversity</a>
-								</li>
-								<li>
-									<a href="http://calendar.ucsd.edu/">Events</a>
-								</li>
-								<li>
-									<a href="http://ucsd.edu/campus-life/student-support.html">Student Support</a>
-								</li>
-								<li>
-									<a href="http://studyabroad.ucsd.edu/">Study Abroad</a>
-								</li>
-								<li>
-									<a href="http://career.ucsd.edu/">Career &amp; Internship</a>
-								</li>
-								<li>
-									<a href="http://athletics.ucsd.edu">Athletics</a>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-group">
-							<a href="http://ucsd.edu/support/index.html">Support
-								<br /> UC San Diego
-							</a>
-							<ul class="list-unstyled">
-								<li>
-									<a href="http://alumni.ucsd.edu/">Alumni</a>
-								</li>
-								<li>
-									<a href="http://giving.ucsd.edu/">Giving</a>
-								</li>
-								<li>
-									<a href="http://foundation.ucsd.edu/">Foundation</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
+		<div class="navbar-collapse collapse" id="navbar-collapse-grid"><!-- standard nav small -->
+		<ul class="nav navbar-nav small-nav visible-xs visible-sm">
+		<li class="dropdown">
+		<div class="btn-group navbar-btn">TritonLink Topics<a class="dropdown-toggle" data-toggle="dropdown" href="#"> <img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" /> </a>
+		<ul class="dropdown-menu">
+		<li><a href="/academics/index">Academics</a></li>
+		<li><a href="/finances/index">Finances &amp; Jobs</a></li>
+		<li><a href="/student-life/index">Student Life</a></li>
+		<li><a href="/well-being/index">Well-Being</a></li>
+		<li><a href="/campus-services/index">Campus Services</a></li>
+		</ul>
 		</div>
-	</div>
-</nav>
+		</li>
+		<li>
+		<div class="btn-group navbar-btn">Advising &amp; Grades<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" /> </a>
+		<ul class="dropdown-menu">
+		<li>Academic History</li>
+		<li>Co-Curricular Record</li>
+		<li>Degree Audit</li>
+		<li>Degree Planner</li>
+		<li>General Catalog</li>
+		<li>GPA Calculator</li>
+		<li>Major &amp; Minor</li>
+		<li>REAL Portal</li>
+		<li>Transcripts/Official Documents</li>
+		<li>Virtual Advising Center</li>
+		</ul>
+		</div>
+		</li>
+		<li>
+		<div class="btn-group navbar-btn">Classes &amp; Enrollment<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" /> </a>
+		<ul class="dropdown-menu">
+		<li>Canvas</li>
+		<li>Enrollment Authorization System (EASy)</li>
+		<li>Holds</li>
+		<li>Schedule of Classes</li>
+		<li><a href="/student-life/events/index">WebReg</a></li>
+		</ul>
+		</div>
+		</li>
+		<li>
+		<div class="btn-group navbar-btn"><a href="site://Blink-Sandbox/HR/index">Financial Tools</a><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" /> </a>
+		<ul class="dropdown-menu">
+		<li><a href="site://Blink-Sandbox/sponsor/hr/index">Billing &amp; Payment</a></li>
+		<li><a href="site://Blink-Sandbox/HR/services/covid-19/index">Direct Deposit</a></li>
+		<li><a href="/well-being/personal-safety/index">Financial Aid</a></li>
+		<li>Health Fee Waiver/RAFT</li>
+		<li>Parking Permits</li>
+		<li><a href="/well-being/wellness-resources/index">Residency for Tuition Purposes</a></li>
+		<li><a href="https://eacct-ucsd-sp.transactcampus.com/eaccounts">TritonCash</a></li>
+		</ul>
+		</div>
+		</li>
+		<li>
+		<div class="btn-group navbar-btn"><a href="site://Blink-Sandbox/technology/index">Personal Tools</a><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" /> </a>
+		<ul class="dropdown-menu">
+		<li><a href="site://Blink-Sandbox/technology/about/index">Addresses</a></li>
+		<li><a href="site://Blink-Sandbox/technology/services/index">Public Information Restriction</a></li>
+		<li><a href="site://Blink-Sandbox/technology/initiatives/index">Social Identities &amp; Names</a></li>
+		<li>Handshake</li>
+		</ul>
+		</div>
+		</li>
+		<li>
+		<div class="btn-group navbar-btn"><a href="site://Blink-Sandbox/sponsor/blink-resources/index">Forms &amp; Resources</a>&#160;&#160;<a class="dropdown-toggle" data-toggle="dropdown" href="#"> <img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" /> </a>
+		<ul class="dropdown-menu">
+		<li><a href="site://Blink-Sandbox/sponsor/blink/index">Student Forms</a></li>
+		<li>Financial Aid Forms</li>
+		<li>Campus Calendars</li>
+		<li>List of All Tools</li>
+		<li><a href="https://ucsd.edu/about/a-to-z-index/">A - Z Resource Index</a></li>
+		</ul>
+		</div>
+		</li>
+		</ul>
+		<div class="main-nav">
+		<ul class="nav navbar-nav menu large-nav hidden-xs hidden-sm">
+		<li class="nav-group nav-group-sm"><a href="https://tritonlink.ucsd.edu">TritonLink Topics</a>
+		<ul class="list-unstyled">
+		<li><a href="/academics/index">Academics</a></li>
+		<li><a href="/finances/index">Finances &amp; Jobs</a></li>
+		<li><a href="/student-life/index">Student Life</a></li>
+		<li><a href="/well-being/index">Well-Being</a></li>
+		<li><a href="/campus-services/index">Campus Services</a></li>
+		</ul>
+		</li>
+		<li class="nav-group nav-group-sm"><a href="/my-tritonlink/tools/index">Advising &amp; Grades</a>
+		<ul class="list-unstyled">
+		<li><a href="https://act.ucsd.edu/studentAcademicHistory/academichistorystudentdisplay.htm">Academic History</a></li>
+		<li><a href="https://myccr.ucsd.edu">Co-Curricular Record</a></li>
+		<li><a href="https://act.ucsd.edu/studentDars/select">Degree Audit</a></li>
+		<li><a href="https://google.com">Degree Planner</a></li>
+		<li><a href="https://catalog.ucsd.edu">General Catalog</a></li>
+		<li><a href="https://google.com">GPA Calculator</a></li>
+		<li><a href="https://google.com">Major &amp; Minor</a></li>
+		<li><a href="https://real.ucsd.edu">REAL Portal</a></li>
+		<li><a href="https://google.com">Transcripts/Official Documents</a></li>
+		<li><a href="https://vac.ucsd.edu">Virtual Advising Center</a></li>
+		</ul>
+		</li>
+		<li class="nav-group nav-group-sm"><a href="/academics/index">Class &amp; Enrollment</a>
+		<ul class="list-unstyled">
+		<li><a href="site://Blink-Sandbox/finance/index">Canvas</a></li>
+		<li><a href="site://Blink-Sandbox/facilities/logistics/index">Enrollment Authorization System (EASy)</a></li>
+		<li><a href="https://google.com">Holds</a></li>
+		<li><a href="https://act.ucsd.edu/cgi-bin/tritonlink.pl/2/students/academic/classes/schedule_of_classes.pl">Schedule of Classes</a></li>
+		<li><a href="https://act.ucsd.edu/webreg2">WebReg</a></li>
+		</ul>
+		</li>
+		<li class="nav-group nav-group-sm"><a href="/finances/index">Financial Tools</a>
+		<ul class="list-unstyled">
+		<li><a href="https://plandesignbuild.ucsd.edu/planning/index.html">Billing &amp; Payment</a></li>
+		<li><a href="site://Blink-Sandbox/facilities/management/index">Campus Cards</a></li>
+		<li><a href="site://Blink-Sandbox/facilities/imprints/index">Direct Deposit</a></li>
+		<li><a href="site://Blink-Sandbox/facilities/real-estate/index">Financial Aid</a></li>
+		<li><a href="https://google.com">Health Fee Waiver/RAFT</a></li>
+		<li><a href="https://google.com">Parking Permits</a></li>
+		<li><a href="https://google.com">Residency for Tuition Purposes</a></li>
+		<li><a href="https://eacct-ucsd-sp.transactcampus.com/eaccounts">TritonCash</a></li>
+		</ul>
+		</li>
+		<li class="nav-group"><a href="/student-life/index">Personal Tools</a>
+		<ul class="list-unstyled">
+		<li><a href="site://Blink-Sandbox/faculty/index">Addresses</a></li>
+		<li><a href="https://google.com">Public Information Restriction</a></li>
+		<li><a href="site://Blink-Sandbox/instructors/index">Social Identities/Names</a></li>
+		<li><a href="https://ucsd.joinhandshake.com/">Handshake</a></li>
+		</ul>
+		</li>
+		<li class="nav-group"><a href="site://Blink-Sandbox/sponsor/blink-resources/index">Forms &amp; Resources</a>
+		<ul class="list-unstyled">
+		<li><a href="/my-tritonlink/forms/index">Student Forms</a></li>
+		<li><a href="https://fas.ucsd.edu/forms-and-resources/forms/">Financial Aid Forms</a></li>
+		<li><a href="/student-life/calendars/index">Campus Calendars</a></li>
+		<li><a href="/my-tritonlink/tools/index">List of All Tools</a></li>
+		<li><a href="https://ucsd.edu/about/a-to-z-index/">A - Z Resource Index</a></li>
+		</ul>
+		</li>
+		</ul>
+		</div>
+		</div>
+		</div>
+		</div>
+		</nav><!--#protect 
+		<nav class="navbar navbar-default navbar-static-top sr-only hidden"><div class="navbar-collapse collapse" id="navbar"><div class="search"><button aria-label="search" class="search-toggle btn-default"></button><div class="search-content" id="search"><form action="/search/index.html" id="cse-search-box" method="get"><label for="search-scope" style="display: none;">Search</label><select class="search-scope" id="search-scope" name="search-scope"><option selected="selected" value="department">This Site</option><option value="default_collection">All UCSD Sites</option><option value="faculty-staff">Faculty/Staff</option></select><div class="input-group"><label for="q" id="search-term-label" style="display: none;">Search Term</label><input autofocus="autofocus" class="form-control search-term" id="q" name="search-term" placeholder="Search..." type="search" /></div></form></div></div></div></nav>
+		#protect-->
 
 <!-- end navbar -->
 
@@ -629,15 +432,7 @@
     
     
 				<div aria-label="Revolving Banners with 2 items " class="carousel-inner" tabindex="0">
-				
-				
-						
-							
-										
-							
-							
-								
-								
+											
 						<div aria-label="1 out of 2" aria-roledescription="slide" class="item active">
 						<img alt="Sun God" class="first-slide" src="images/homepage/banner-2.jpg">
 									
@@ -696,7 +491,7 @@
 		<div class="col-md-4">
 			<img src="images/icons/trident-icon-ed.svg" class="responsive-img trident-icon" />
 		   	<div class="news-events-title">
-			   	<h2>News & Announcements</h2>
+			   	<h2>Announcements & Deadlines</h2>
 				<div id="news-announcements">
 					<div class="test">
 					<div class="cs_announcement_content">
@@ -735,8 +530,8 @@
 		   	<div class="col-md-12">
 			   	<img src="images/icons/trident-icon-ed.svg" class="responsive-img trident-icon" />
 			   	<div class="news-events-title">
-				   	<h2 class="no-mg-top">NEWS & Opportunities</h2>
-				   	<p><a href="">View All News</a></p>
+				   	<h2 class="no-mg-top">Upcoming</h2>
+				   	<p><a href="">View All Student Events</a></p>
 			   	</div>	
 		   	</div>
 		   	<div class="col-md-12">
@@ -781,7 +576,7 @@
 		   
 					
 	   	</div>
-			<!-- End News -->
+		  <!-- End News -->
 			
 	      <!-- Begin Events -->
 		   <div class="col-md-4">
@@ -956,7 +751,7 @@
 		dots:true,
 		arrows: false
 	});
-   
+	$('.slick-dots').append("<span class='more-text'>More:</span>");
     </script>
 
 </body>

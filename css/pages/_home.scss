@@ -141,7 +141,7 @@
       }
       h2 {
         font-size: 1.5em;
-        margin: 9px 0 0 0;
+        margin: 0px 0 0 0;
       }
       h3 {
         font-size: 1.2em;
@@ -563,11 +563,11 @@
   /*background: #eee;*/
   clear: both;
   display: block;
-  margin-top: 30px;
+  margin-top: 14px;
 
     h3 {
       color: #005d99;
-      font-weight: 400;
+      font-weight: bold;
       margin-bottom: 7px;
     }
 
@@ -607,7 +607,7 @@
     border: none !important
   }
 
-  li.slick-active button:focus .slick-dot-icon,  {
+  li.slick-active button:focus .slick-dot-icon  {
     color: transparent !important;
   }
  
@@ -630,6 +630,12 @@
     border: none !important
 
   }
+}
+
+span.more-text {
+  float: left;
+  margin-top: 6px;
+  font-weight: bold;
 }
 
 
@@ -679,10 +685,6 @@
   background-color: #00629B;
   height: 16px;
   width: 16px;
-
-  .i-everyday {
-    
-  }
 
 }
 

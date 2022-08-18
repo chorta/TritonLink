@@ -2425,7 +2425,7 @@ nav#toolbar-nav {
 }
 .jumbotron-news-events h2 {
   font-size: 1.5em;
-  margin: 9px 0 0 0;
+  margin: 0px 0 0 0;
 }
 .jumbotron-news-events h3 {
   font-size: 1.2em;
@@ -2774,13 +2774,13 @@ nav#toolbar-nav {
   /*background: #eee;*/
   clear: both;
   display: block;
-  margin-top: 30px;
+  margin-top: 14px;
   padding: 10px;
   height: 338px;
 }
 #news-announcements h3 {
   color: #005d99;
-  font-weight: 400;
+  font-weight: bold;
   margin-bottom: 7px;
 }
 #news-announcements .fm-h3 {
@@ -2823,6 +2823,12 @@ nav#toolbar-nav {
 
 .slick-dots .slick-active button {
   border: none !important;
+}
+
+span.more-text {
+  float: left;
+  margin-top: 6px;
+  font-weight: bold;
 }
 
 /* TL Slider */
@@ -2871,6 +2877,7 @@ nav#toolbar-nav {
   height: 16px;
   width: 16px;
 }
+
 #toggleCarousel {
   position: relative;
   float: left !important;
