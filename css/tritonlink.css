@@ -2424,8 +2424,8 @@ nav#toolbar-nav {
   height: auto;
 }
 .jumbotron-news-events h2 {
-  font-size: 1.5em;
-  margin: 0px 0 0 0;
+  font-size: 1.2em;
+  margin: 10px 0 0 0;
 }
 .jumbotron-news-events h3 {
   font-size: 1.2em;
@@ -2791,38 +2791,25 @@ nav#toolbar-nav {
   line-height: 1.5em;
   padding: 10px;
 }
+.cs_announcement_content p {
+  margin-bottom: 0;
+}
 
 .slick-list {
   background-color: #eee;
 }
 
 .slick-dots {
+  bottom: unset !important;
   text-align: left !important;
 }
-.slick-dots li button .slick-dot-icon {
-  color: transparent !important;
+.slick-dots li button:before {
+  font-size: 20px !important;
+  line-height: 25px !important;
 }
-.slick-dots li button {
-  height: 16px !important;
-  width: 16px !important;
-}
-.slick-dots li.slick-active button .slick-dot-icon {
-  color: #00629b !important;
-  border: none !important;
-}
-.slick-dots li.slick-active button:focus .slick-dot-icon {
-  color: transparent !important;
-}
-.slick-dots li button:focus .slick-dot-icon:before {
-  color: transparent !important;
-}
-.slick-dots li button {
-  border: 1px solid #00629b !important;
-  border-radius: 13px;
-}
-
-.slick-dots .slick-active button {
-  border: none !important;
+.slick-dots li.slick-active button:before {
+  opacity: 100 !important;
+  color: #02619c !important;
 }
 
 span.more-text {
@@ -2832,15 +2819,13 @@ span.more-text {
 }
 
 /* TL Slider */
-.jumbotron-hero {
+.tl-slides .jumbotron-hero {
   background: transparent !important;
 }
-
-.carousel-inner {
+.tl-slides .carousel-inner {
   outline: transparent !important;
 }
-
-.cr-item-container {
+.tl-slides .cr-item-container {
   background: #2e2e2e8f;
   bottom: 0;
   left: 0;
@@ -2848,75 +2833,53 @@ span.more-text {
   top: unset !important;
   width: 100% !important;
 }
-.cr-item-container h1 {
+.tl-slides .cr-item-container h1 {
   margin: 15px 0 15px 10px;
   font-size: 13px;
   text-transform: none !important;
 }
-
-#indicators-container {
+.tl-slides #indicators-container {
   position: relative;
   bottom: 0;
   padding: 10px 0 0 19px;
   margin-left: 0;
   height: 45px;
 }
-
-.carousel-control {
+.tl-slides .carousel-control {
   outline: transparent !important;
 }
-
-.carousel-indicators li {
-  border-color: #00629B;
-  height: 15px;
-  width: 15px;
+.tl-slides .carousel-indicators li {
+  background-color: #c0c0c0;
+  border: 0;
+  height: 17px;
+  width: 17px;
+  margin: 0 11px 0 0 !important;
 }
-
-.carousel-indicators .active {
+.tl-slides .carousel-indicators .active {
   background-color: #00629B;
-  height: 16px;
-  width: 16px;
+  height: 17px;
+  width: 17px;
 }
-
-#toggleCarousel {
+.tl-slides #toggleCarousel {
   position: relative;
   float: left !important;
   font-size: 18px !important;
   bottom: 3px !important;
 }
-
-button#toggleCarousel {
+.tl-slides button#toggleCarousel {
   color: #00629B !important;
 }
-
-#heroslider h1 {
-  font-size: 20px;
+.tl-slides #heroslider h1 {
+  font-size: 21px;
 }
-
-.carousel-control.left, .carousel-control.right {
+.tl-slides #heroslider h1 a {
+  color: #FFF;
+}
+.tl-slides #heroslider h1 a:hover {
+  text-decoration: underline !important;
+}
+.tl-slides .carousel-control.left, .tl-slides .carousel-control.right {
   color: #fff !important;
-}
-
-.slick-slide img {
-  max-width: 100%;
-  height: auto !important;
-}
-
-.slick-prev {
-  left: 15px !important;
-  z-index: 9999 !important;
-}
-
-.slick-next {
-  right: 15px !important;
-}
-
-.slick-prev-icon, .slick-next-icon {
-  color: #fff !important;
-}
-
-button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
-  background-color: transparent !important;
 }
 
 /* TL Tools */
@@ -2967,10 +2930,12 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
 }
 .t-tools object {
   width: 35px;
-  display: block;
-  position: absolute;
-  left: 25px;
-  top: 77px;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 0;
+  float: left;
 }
 
 .s-forms {
@@ -2979,10 +2944,12 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
 }
 .s-forms object {
   width: 30px;
-  display: block;
-  position: absolute;
-  left: 25px;
-  top: 130px;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 0;
+  float: left;
 }
 
 .s-calendar {
@@ -2991,10 +2958,12 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
 }
 .s-calendar object {
   width: 30px;
-  display: block;
-  position: absolute;
-  left: 25px;
-  top: 180px;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 0;
+  float: left;
 }
 
 .s-email {
@@ -3003,10 +2972,12 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
 }
 .s-email object {
   width: 30px;
-  display: block;
-  position: absolute;
-  left: 25px;
-  top: 230px;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 0;
+  float: left;
 }
 
 .s-ted {
@@ -3015,10 +2986,12 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
 }
 .s-ted object {
   width: 30px;
-  display: block;
-  position: absolute;
-  left: 28px;
-  top: 280px;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 0;
+  float: left;
 }
 
 .s-ptriton {
@@ -3035,12 +3008,14 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
   /*background: #747678 url(../images/handshake.png) no-repeat;
   background-position: -1px 5px;*/
 }
-object {
+.s-handshake object {
   width: 30px;
+  height: auto;
   display: block;
-  position: absolute;
-  left: 25px;
-  top: 330px;
+  position: relative;
+  left: 0;
+  top: 0;
+  float: left;
 }
 
 .sbutton:hover {
