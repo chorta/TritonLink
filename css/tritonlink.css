@@ -2294,6 +2294,12 @@ nav#toolbar-nav {
   margin-bottom: 25px;
 }
 
+/* preload some images */
+body::after {
+  display: none;
+  content: url("../images/icons/tl-mail-hvr.svg") url("../images/icons/tl-books-hvr.svg") url("../images/icons/tl-wrench-hvr.svg") url("../images/icons/tl-document-hvr.svg") url("../images/icons/tl-calendar-hvr.svg") url("../images/icons/tl-handshake-hvr.svg");
+}
+
 /* Jumbotron Search */
 .blink-jumbosearch {
   background: url(../images/homepage/brand-elements-hero.jpg) no-repeat;
@@ -2509,7 +2515,7 @@ nav#toolbar-nav {
     margin-top: 1em;
   }
   .jumbotron-news-events .event {
-    margin: 1em 0 1.5em 0;
+    margin: 0 0 250px 0;
     display: flex;
     flex-flow: column;
     align-items: flex-start;
@@ -2536,7 +2542,7 @@ nav#toolbar-nav {
     margin-bottom: 0.5em;
   }
   .jumbotron-news-events .event {
-    margin-bottom: 0.5em;
+    margin-bottom: 25px;
     display: flex;
     flex-flow: row;
     width: auto;
@@ -2899,6 +2905,9 @@ span.more-text {
   margin-bottom: 5px;
   padding: 5px;
 }
+.sbutton:hover {
+  background: #fecd00;
+}
 
 .ed-tool {
   /*background-color: #747678 !important;*/
@@ -2925,102 +2934,73 @@ span.more-text {
 }
 
 .t-tools {
-  /*background: #747678 url(../images/wrench.png) no-repeat;*/
-  background-position: -1px 2px;
+  background: url(../images/icons/tl-wrench.svg) no-repeat;
+  background-position: 5px 2px;
+  background-size: 40px;
 }
-.t-tools object {
-  width: 40px;
-  height: auto;
-  display: inline-block;
-  position: relative;
-  left: 0;
-  top: 0;
-  float: left;
+.t-tools:hover {
+  background: #fecd00 url(../images/icons/tl-wrench-hvr.svg) no-repeat;
+  background-position: 5px 2px;
+  background-size: 40px;
 }
 
 .s-forms {
-  /*background: #747678 url(../images/paper.png) no-repeat;
-  background-position: -1px 1px;*/
+  background: url(../images/icons/tl-document.svg) no-repeat;
+  background-position: 3px 4px;
+  background-size: 35px;
 }
-.s-forms object {
-  width: 30px;
-  height: auto;
-  display: inline-block;
-  position: relative;
-  left: 0;
-  top: 0;
-  float: left;
+.s-forms:hover {
+  background: #fecd00 url(../images/icons/tl-document-hvr.svg) no-repeat;
+  background-position: 3px 4px;
+  background-size: 35px;
 }
 
 .s-calendar {
-  /*background: #747678 url(../images/calendar.png) no-repeat;
-  background-position: -1px 3px;*/
+  background: url(../images/icons/tl-calendar.svg) no-repeat;
+  background-position: 5px 3px;
+  background-size: 35px;
 }
-.s-calendar object {
-  width: 30px;
-  height: auto;
-  display: inline-block;
-  position: relative;
-  left: 0;
-  top: 0;
-  float: left;
+.s-calendar:hover {
+  background: #fecd00 url(../images/icons/tl-calendar-hvr.svg) no-repeat;
+  background-position: 5px 3px;
+  background-size: 35px;
 }
 
 .s-email {
-  /*background: #747678 url(../images/letter.png) no-repeat;
-  background-position: -1px 4px;*/
+  background: url(../images/icons/tl-mail.svg) no-repeat;
+  background-position: 5px 3px;
+  background-size: 35px;
 }
-.s-email object {
-  width: 30px;
-  height: auto;
-  display: inline-block;
-  position: relative;
-  left: 0;
-  top: 0;
-  float: left;
+.s-email:hover {
+  background: #fecd00 url(../images/icons/tl-mail-hvr.svg) no-repeat;
+  background-position: 5px 3px;
+  background-size: 35px;
 }
 
 .s-ted {
-  /*background: #747678 url(../images/books.png) no-repeat;
-  background-position: -1px 4px;*/
+  background: url(../images/icons/tl-books.svg) no-repeat;
+  background-position: 5px 3px;
+  background-size: 35px;
 }
-.s-ted object {
-  width: 30px;
-  height: auto;
-  display: inline-block;
-  position: relative;
-  left: 0;
-  top: 0;
-  float: left;
-}
-
-.s-ptriton {
-  background: #747678 url(../images/compass.png) no-repeat;
-  background-position: -1px 4px;
-}
-
-.s-ptriton {
-  background: #747678 url(../images/compass.png) no-repeat;
-  background-position: -1px 4px;
+.s-ted:hover {
+  background: #fecd00 url(../images/icons/tl-books-hvr.svg) no-repeat;
+  background-position: 5px 3px;
+  background-size: 35px;
 }
 
 .s-handshake {
-  /*background: #747678 url(../images/handshake.png) no-repeat;
-  background-position: -1px 5px;*/
+  background: url(../images/icons/tl-handshake.svg) no-repeat;
+  background-position: 5px 3px;
+  background-size: 35px;
 }
-.s-handshake object {
-  width: 30px;
-  height: auto;
-  display: block;
-  position: relative;
-  left: 0;
-  top: 0;
-  float: left;
+.s-handshake:hover {
+  background: #fecd00 url(../images/icons/tl-handshake-hvr.svg) no-repeat;
+  background-position: 5px 3px;
+  background-size: 35px;
 }
 
 .sbutton:hover a {
   color: #182b49 !important;
-  text-decoration: underline;
   padding: 10px 0;
 }
 
