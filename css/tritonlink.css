@@ -2478,9 +2478,6 @@ nav#toolbar-nav {
   font-size: 1.22em;
   border-bottom: none;
 }
-.jumbotron-news-events .event:first-of-type {
-  margin-top: 2em;
-}
 .jumbotron-news-events .event-title {
   margin-bottom: 0;
   margin-right: 1em;
@@ -2509,6 +2506,7 @@ nav#toolbar-nav {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
+    margin-top: 1em;
   }
   .jumbotron-news-events .event {
     margin: 1em 0 1.5em 0;
@@ -2518,7 +2516,7 @@ nav#toolbar-nav {
     width: 30%;
   }
   .jumbotron-news-events .event:first-of-type {
-    margin-top: 1em;
+    margin-top: 0em;
   }
 }
 @media (min-width: 992px) {
@@ -2895,10 +2893,11 @@ span.more-text {
 .sbutton {
   /*background-color: #00629B !important;*/
   display: block;
-  height: 40px;
+  height: auto;
   overflow: hidden;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  padding: 5px;
 }
 
 .ed-tool {
@@ -2910,8 +2909,8 @@ span.more-text {
 }
 
 .sbutton h3 {
-  margin-left: 55px;
-  line-height: 2em;
+  margin: 5px 55px;
+  line-height: normal;
   color: #FFF;
   display: block;
   text-transform: uppercase;
@@ -2922,6 +2921,7 @@ span.more-text {
   color: #00629b;
   text-decoration: none;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 .t-tools {
@@ -2929,7 +2929,7 @@ span.more-text {
   background-position: -1px 2px;
 }
 .t-tools object {
-  width: 35px;
+  width: 40px;
   height: auto;
   display: inline-block;
   position: relative;
@@ -3018,11 +3018,10 @@ span.more-text {
   float: left;
 }
 
-.sbutton:hover {
-  background-color: #ebae23 !important;
-}
 .sbutton:hover a {
-  color: #000 !important;
+  color: #182b49 !important;
+  text-decoration: underline;
+  padding: 10px 0;
 }
 
 .figure_left {
