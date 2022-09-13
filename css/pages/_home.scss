@@ -245,16 +245,19 @@ body::after {
         margin-top: 1em;
       }
 			.event {
-				margin: 0 0 250px 0;
+				margin: auto 0 20px 0;
 				display: flex;
 				flex-flow: column;
 				align-items: flex-start;
-				width: 30%;
+				width: auto;
 				
 				&:first-of-type {
 					margin-top: 0em;
 				}
 			}
+      .date-wrap {
+        width: 6em;
+      }
 		}
 	}
 	@media (min-width:992px) {
@@ -583,6 +586,11 @@ body::after {
 
   padding: 10px;
   height: 338px;
+
+  @media (max-width:1199px) {
+		height: auto;
+	}
+
 }
 
 .cs_announcement_content {
@@ -598,6 +606,10 @@ body::after {
 
 .slick-list {
   background-color: #eee;
+  min-height: 343px;
+  @media (max-width:1200px) {
+		min-height: auto;
+	}
 }
 
 .slick-dots {
@@ -615,8 +627,11 @@ body::after {
     color: #02619c !important;
   }
 
-}
+  li :focus {
+    outline: none !important;
+  }
 
+}
 
 
 span.more-text {
@@ -648,6 +663,10 @@ span.more-text {
       font-size: 13px;
       text-transform: none !important;
     }
+
+    @media (max-width:768px) {
+			margin: auto;
+		  }
   }
 
   #indicators-container {
@@ -656,6 +675,7 @@ span.more-text {
     padding: 10px 0 0 19px;
     margin-left: 0;
     height: 45px;
+    z-index: 1;
   }
 
   .carousel-control {
@@ -849,3 +869,5 @@ span.more-text {
       padding: 10px 0;
     }
 }
+
+

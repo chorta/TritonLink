@@ -34,39 +34,8 @@ function getGreetingTime (m) {
 
 
 
-// Match Height - jquery-match-height dependent
-
-$(".toolset-container").matchHeight({
-  property: 'min-height'
-});
 
 
-
-// MyBlink Session
-
-
-function jsonpCallback(jsonStr) {
-        var json = JSON.parse(jsonStr);
-        $('#_myblink_toolbox').html(json.message);
-
-
-				// Show Popular on Blink if MyBlink is NOT Activate
-				if (json.message.length > 243) {
-					$('.toolset-link').hide();
-				}
-      }
-
-function myBlinkLogout() {
-    // delete cookie
-    document.cookie = '_myblink_user=; Path=/; domain=.ucsd.edu; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-    $.ajax({
-      method: "GET",
-      url: "https://act.ucsd.edu/myblink-client/bookmarks/j-logout.htm",
-      dataType: "script"
-    });
-
-		$('#popular-onblink').show();
-}
 
 
 //Loop through featured news items and check for expired items
@@ -257,10 +226,28 @@ $(".news-col-1 >.news-item").each(function (j) {
     $(this).toggleClass('glyphicon-wrench glyphicon-remove rotate');
   });
 
-// Footer Year
+  /* News & Announcements Slick */
+  
+  $('.deadlines').slick({
+		dots:true,
+		rows: 3,
+		slidesToShow: 1,
+		arrows: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          rows: 2
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          rows: 3,
+        }
+      }
+    ]
+    
+	});
 
-// var footerDate = moment().format('YYYY');
-//
-// $(".footer-copyright-year").append(footerDate);
-
-
+	$('.slick-dots').append("<span class='more-text'> More:</span>");

@@ -100,11 +100,11 @@
 		</div>
 		</div>
 		<div class="container-fluid nav-wrap">
-		<div class="container">
+		<div class="container nav-overflow">
 		<div class="navbar-collapse collapse" id="navbar-collapse-grid"><!-- standard nav small -->
 		<ul class="nav navbar-nav small-nav visible-xs visible-sm">
 		<li class="dropdown">
-		<div class="btn-group navbar-btn">TritonLink Topics<a class="dropdown-toggle" data-toggle="dropdown" href="#"> <img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" /> </a>
+		<div class="btn-group navbar-btn"><a href="#">TritonLink Topics</a><a class="dropdown-toggle" data-toggle="dropdown" href="#"> <img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" /> </a>
 		<ul class="dropdown-menu">
 		<li><a href="/academics/index">Academics</a></li>
 		<li><a href="/finances/index">Finances &amp; Jobs</a></li>
@@ -115,7 +115,7 @@
 		</div>
 		</li>
 		<li>
-		<div class="btn-group navbar-btn">Advising &amp; Grades<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" /> </a>
+		<div class="btn-group navbar-btn"><a href="#">Advising &amp; Grades</a><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" /> </a>
 		<ul class="dropdown-menu">
 		<li>Academic History</li>
 		<li>Co-Curricular Record</li>
@@ -131,7 +131,7 @@
 		</div>
 		</li>
 		<li>
-		<div class="btn-group navbar-btn">Classes &amp; Enrollment<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" /> </a>
+		<div class="btn-group navbar-btn"><a href="#">Classes &amp; Enrollment</a><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img alt="arrow" src="https://www.ucsd.edu/_resources/img/icon_arrow.png" /> </a>
 		<ul class="dropdown-menu">
 		<li>Canvas</li>
 		<li>Enrollment Authorization System (EASy)</li>
@@ -176,8 +176,9 @@
 		</div>
 		</li>
 		</ul>
-		<div class="main-nav">
+		<div class="main-nav col-md-10">
 		<ul class="nav navbar-nav menu large-nav hidden-xs hidden-sm">
+		
 		<li class="nav-group nav-group-sm"><a href="https://tritonlink.ucsd.edu">TritonLink Topics</a>
 		<ul class="list-unstyled">
 		<li><a href="/academics/index">Academics</a></li>
@@ -230,20 +231,16 @@
 		<li><a href="https://ucsd.joinhandshake.com/">Handshake</a></li>
 		</ul>
 		</li>
-		<li class="nav-group"><a href="site://Blink-Sandbox/sponsor/blink-resources/index">Forms &amp; Resources</a>
-		<ul class="list-unstyled">
-		<li><a href="/my-tritonlink/forms/index">Student Forms</a></li>
-		<li><a href="https://fas.ucsd.edu/forms-and-resources/forms/">Financial Aid Forms</a></li>
-		<li><a href="/student-life/calendars/index">Campus Calendars</a></li>
-		<li><a href="/my-tritonlink/tools/index">List of All Tools</a></li>
-		<li><a href="https://ucsd.edu/about/a-to-z-index/">A - Z Resource Index</a></li>
+		
 		</ul>
-		</li>
-		</ul>
+
+		</div>
+		<div id="mytlbutton-y" class="col-md-2"><a href="http://mytritonlink.ucsd.edu/">MY TRITONLINK</a></div>
+		</div>
+
 		</div>
 		</div>
-		</div>
-		</div>
+		
 		</nav><!--#protect 
 		<nav class="navbar navbar-default navbar-static-top sr-only hidden"><div class="navbar-collapse collapse" id="navbar"><div class="search"><button aria-label="search" class="search-toggle btn-default"></button><div class="search-content" id="search"><form action="/search/index.html" id="cse-search-box" method="get"><label for="search-scope" style="display: none;">Search</label><select class="search-scope" id="search-scope" name="search-scope"><option selected="selected" value="department">This Site</option><option value="default_collection">All UCSD Sites</option><option value="faculty-staff">Faculty/Staff</option></select><div class="input-group"><label for="q" id="search-term-label" style="display: none;">Search Term</label><input autofocus="autofocus" class="form-control search-term" id="q" name="search-term" placeholder="Search..." type="search" /></div></form></div></div></div></nav>
 		#protect-->
@@ -420,7 +417,7 @@
   <section aria-label="News and Events Section" class="jumbotron side-image-white jumbotron-news-events tl-slides">
     <div class="container">
       <div class="row">
-		<div class="col-md-8" id="rotator-section">
+		<div class="col-lg-8 col-md-7" id="rotator-section">
 			
 			
 
@@ -488,12 +485,12 @@
 			   
 		</div>
 
-		<div class="col-md-4">
+		<div class="col-lg-4 col-md-5">
 			<img src="images/icons/trident-icon-ed.svg" class="responsive-img trident-icon" />
 		   	<div class="news-events-title">
 			   	<h2>Announcements & Deadlines</h2>
 				<div id="news-announcements">
-					<div class="test">
+					<div class="deadlines">
 					<div class="cs_announcement_content">
 						<h3>Jul 18</h3>
 						<p>Deadline to enroll w/o $50 late enrollment fee (Summer Session 1 & 3)</p>
@@ -709,35 +706,23 @@
   <script src="https://cdn.ucsd.edu/cms/decorator-5/scripts/vendor.min.js"></script>
   <script src="https://cdn.ucsd.edu/cms/decorator-5/scripts/base.min.js"></script>
 
-  <!-- Blink Common Scripts -->
-  <script src="scripts/blink.js"></script>
-
-  <!-- Blink Home Scripts -->
-  <script src="scripts/vendor/moment.min.js"></script>
-  <script src="scripts/blink-home.js"></script>
-
-  <!-- MyBlink -->
-  <script src="https://blink.ucsd.edu/_resources/js/myblink-homepage.js"></script>
-  <script src="https://blink.ucsd.edu/_resources/js/sso-manager.js"></script>
-  <script src="https://act.ucsd.edu/myblink-client/bookmarks/getItemsV2.htm"></script>
-  <!-- Shib timeout -->
-  <img src="https://a4.ucsd.edu/tritON/imagebug" alt=" " style="display: none;"/>
-  <script async="async" src="https://cse.google.com/cse.js?cx=018004871191465680600:if0pbfs1amc"></script>
+  <!-- Students Common Scripts -->
+  <script src="scripts/students.js"></script>
 
   <!-- Plugins -->
+  <script type="text/javascript" src="scripts/vendor/slick/slick.min.js"></script>
 
-    <script type="text/javascript" src="scripts/vendor/slick/slick.min.js"></script>
+  <!-- Students Home Scripts -->
+  <script src="scripts/vendor/moment.min.js"></script>
+  <script src="scripts/students-home.js"></script>
 
-    <script type="text/javascript">
-      
-	  $('.test').slick({
-		dots:true,
-		rows: 3,
-		slidesToShow: 1,
-		arrows: false
-	});
-	$('.slick-dots').append("<span class='more-text'> More:</span>");
-    </script>
+  <!-- MyBlink -->
+  <!-- Shib timeout -->
+  
+  <script async="async" src="https://cse.google.com/cse.js?cx=018004871191465680600:if0pbfs1amc"></script>
+
+
+
 
 </body>
 </html>

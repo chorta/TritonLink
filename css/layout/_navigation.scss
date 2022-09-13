@@ -287,3 +287,135 @@ nav#toolbar-nav {
     margin: 10px 10px 5px 10px;
     color: #333;
 }
+
+#mytlbutton {
+	background-color: #182B49;
+    color: #FFF;
+    height: 51px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    background-image: url(https://cdn.ucsd.edu/cms/decorator-5/img/bg-light-yellow-trident.png);
+	background-position: -37px -1px;
+    background-size: 249px;
+
+
+
+	a {
+		color: #fff;
+		padding: 12px 39px;
+		position: absolute;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+#mytlbutton {
+	background-color: #182B49;
+    color: #FFF;
+    height: 51px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    background-image: url(https://cdn.ucsd.edu/cms/decorator-5/img/bg-light-yellow-trident.png);
+	background-position: -37px -1px;
+    background-size: 249px;
+
+
+
+	a {
+		color: #fff;
+		padding: 12px 35px;
+		position: absolute;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+#mytlbutton-y {
+	background-color: #ffcd00;
+    color: #FFF;
+    height: 51px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    background-image: url("../images/bg-light-white-trident.png");
+	background-position: -37px -1px;
+    background-size: 249px;
+	cursor: pointer;
+
+
+	a {
+		color: #182B49;
+		padding: 6px 33px 17px 33px;
+		position: absolute;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		@media (max-width:1199px) {
+			padding: 12px 15px;
+		  }
+		  
+	
+	}
+
+	@media (max-width:1199px) {
+		background-position: -60px 0px;
+    	background-repeat: no-repeat;
+    	background-size: 150%;
+	}
+
+	@media (max-width:991px) {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 0 0;
+	}
+
+	
+
+
+	&:hover {
+		background-image: url("../images/bg-dark-blue-trident.png");
+		@media (max-width:1200px) {
+			background-position: 96px -1px;
+			background-repeat: no-repeat;
+		}
+
+		@media (max-width:1199px) {
+			background-position: -60px 0px;
+			background-repeat: no-repeat;
+			background-size: 150%;
+		}
+	
+		@media (max-width:991px) {
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 0 0;
+		}
+	}
+
+
+}
+
+/*navbar toggle safari hack */@at-root
+
+.navbar-toggle .icon-bar:nth-child(2) {
+	zoom: 1.005;
+}
+
+.navbar-toggle .icon-bar:nth-child(4) {
+	zoom: 1.005;
+}
+
+.nav-overflow {
+	overflow: hidden;
+}
