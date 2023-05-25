@@ -235,7 +235,7 @@ setTimeout(function() {
   });
 
   board.append(boards);
-}, 600);
+}, 1);
   
   /* Tools Button Toggle */
 

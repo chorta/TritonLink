@@ -773,13 +773,14 @@ span.more-text {
   /*background-color: #B6B1A9 !important;*/
 }
 
-.sbutton h3 {
+.sbutton span {
   margin: 5px 55px;
   line-height: normal;
   color: #FFF;
   display: block;
   text-transform: uppercase;
   cursor: pointer;
+  font-size: 1.2em;
 }
 
 .sbutton a {
@@ -870,4 +871,6 @@ span.more-text {
     }
 }
 
-
+ul.tb-st1, ul.tb-st2 {
+  padding: 0;
+}
