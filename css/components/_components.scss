@@ -1,4 +1,4 @@
-/****** Bread Crubm Adjustments */
+/****** Bread Crumb Adjustments */
 
 .breadcrumb {
     margin: 20px 0;
@@ -113,12 +113,12 @@
 
 .faq_expand_some  {
     float: right;
-    font-size: 65%;
-    font-weight: normal;
+    font: normal normal normal 45%/1.5 Roboto, sans-serif;
     text-decoration: none;
     color: #666;
     padding-left: 10px;
     background: #fff url(../images/blink_sprite.gif) 0 0px no-repeat;
+ 
 }
 
 .faq_some_expanded  {
@@ -140,15 +140,19 @@
 /****** Simple Contact Module */
 
 
-.gray-trdnt {
-    background-image: url(../images/bg-light-gray-trident.png);
-    background-position: 0 -75px;
+.contact-module {
+    background-image: url(../images/contact-box-blue-2.jpg);
+    background-position: top left;
     margin: 20px 0;
-    padding-left: 5px !important;
+    padding-left: 35px !important;
     padding-right: 5px !important;
+    color: #000000;
+    padding-top: 40px !important;
+    border-radius: 10px;
 
     p {
       margin-bottom: 0;
+      margin-top: 1em;
     }
 }
 

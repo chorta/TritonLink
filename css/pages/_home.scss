@@ -145,9 +145,10 @@ body::after {
         padding-right: 10px;
         width: 35px;
         height: auto;
+ 	      margin: 10px 0px;
       }
       h2 {
-        font-size: 1.2em;
+        font-size: 1.75em;
         margin: 10px 0 0 0;
       }
       h3 {
@@ -192,6 +193,7 @@ body::after {
 			line-height: 1.25em;
 			padding: .5em 1em;
 			margin: 0 1.5em .25em 0;
+ 	    border-radius: 10px;
 		}
 
     .fm-blue { 
@@ -658,6 +660,9 @@ span.more-text {
     padding: 0 0 0 10px;
     top: unset !important;
     width: 100% !important;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+
     h1 {
       margin: 15px 0 15px 10px;
       font-size: 13px;
@@ -676,6 +681,7 @@ span.more-text {
     margin-left: 0;
     height: 45px;
     z-index: 1;
+ 	  background-color: unset;
   }
 
   .carousel-control {
@@ -700,7 +706,6 @@ span.more-text {
     background-color: #00629B;
     height: 17px;
     width: 17px;
-
   }
 
   #toggleCarousel {
@@ -718,7 +723,7 @@ span.more-text {
 
   #heroslider {
     h1 {
-      font-size: 21px;
+      font-size: 1.75em;
 
       a {
         color: #FFF;
@@ -734,6 +739,10 @@ span.more-text {
 
   .carousel-control.left, .carousel-control.right {
     color: #fff !important;
+  }
+
+  img {
+    margin: 0;
   }
 }
 
